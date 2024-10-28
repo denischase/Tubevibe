@@ -1,0 +1,44 @@
+echo "<script>alert('User inserted');</script>";
+               $to_email = $email;
+               $subject = "Email Verification";
+               $body = "Hi ".$name.", This is Your verification Link Please Click Here to verify for Youtubevibe";
+               $headers = "From: yvibe7605@gmail.com";
+               if(mail($to_email,$subject,$body,$headers)){
+                ?>
+           <div class="alert alert-danger" role="alert">
+              <?php  echo "Email success sent to ".$to_email."..."; ?>
+                </div>
+           <?php
+               }
+               else{
+                ?>
+                <div class="alert alert-danger" role="alert">
+                echo "Email sending failed..";
+                      </div>
+           <?php
+               }
+           }
+           else
+           {
+               echo "<script>alert('Not inserted');</script>";
+           }
+
+
+           ?>
+           <div class="alert alert-success" role="alert">
+           <?php 
+           if(isset($_SESSION['msg'])){
+           echo $_SESSION['msg'];
+           unset($_SESSION['msg']);
+        }
+        else if(isset($_SESSION['message'])){
+            echo $_SESSION['message'];
+            unset($_SESSION['message']);
+         }
+        else{
+            echo "<p>Login with your Email & Password</p>";
+        }
+        
+           ?>
+        </div>
+           <?php
