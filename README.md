@@ -12,7 +12,7 @@ This project is a Complete Dynamic and Fully Functional Website using PHP prrogr
 
 # 🧰 Features
 1. Visitors/Users can browse all the Categories and Videos. 
-2. They also can order easily from the website.
+2. They also can stream easily from the website.
 3. Admin can Manage Admin, Categories and Videos.
 4. Admin can also Manage and Track Videos and Users respectively.
 
